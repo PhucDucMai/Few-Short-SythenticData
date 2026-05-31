@@ -1,0 +1,288 @@
+{
+  "checkpoint": "model/best_model.pth",
+  "device": "cuda",
+  "test_dir": "test",
+  "num_samples": 950,
+  "num_classes": 37,
+  "accuracy": 0.9042105263157895,
+  "macro_f1": 0.9028235858833953,
+  "weighted_f1": 0.9039956018525283,
+  "mean_confidence": 0.8261087503715565,
+  "class_names": [
+    "Abyssinian",
+    "American_Bulldog",
+    "American_Pit_Bull_Terrier",
+    "Basset_Hound",
+    "Beagle",
+    "Bengal",
+    "Birman",
+    "Bombay",
+    "Boxer",
+    "British_Shorthair",
+    "Chihuahua",
+    "Egyptian_Mau",
+    "English_Cocker_Spaniel",
+    "English_Setter",
+    "German_Shorthaired",
+    "Great_Pyrenees",
+    "Havanese",
+    "Japanese_Chin",
+    "Keeshond",
+    "Leonberger",
+    "Main_Coon",
+    "Miniature_Pinscher",
+    "Newfoundland",
+    "Persian",
+    "Pomeranian",
+    "Pug",
+    "Ragdoll",
+    "Russian_Blue",
+    "Saint_Bernard",
+    "Samoyed",
+    "Scottish_Terrier",
+    "Shiba_Inu",
+    "Siamese",
+    "Sphynx",
+    "Staffordshire_Bull_Terrier",
+    "Wheaten_Terrier",
+    "Yorkshire_Terrier"
+  ],
+  "report_dict": {
+    "Abyssinian": {
+      "precision": 0.92,
+      "recall": 0.92,
+      "f1-score": 0.92,
+      "support": 25.0
+    },
+    "American_Bulldog": {
+      "precision": 0.71875,
+      "recall": 0.92,
+      "f1-score": 0.8070175438596491,
+      "support": 25.0
+    },
+    "American_Pit_Bull_Terrier": {
+      "precision": 0.782608695652174,
+      "recall": 0.6,
+      "f1-score": 0.6792452830188679,
+      "support": 30.0
+    },
+    "Basset_Hound": {
+      "precision": 0.8620689655172413,
+      "recall": 0.9615384615384616,
+      "f1-score": 0.9090909090909091,
+      "support": 26.0
+    },
+    "Beagle": {
+      "precision": 0.9166666666666666,
+      "recall": 0.8461538461538461,
+      "f1-score": 0.88,
+      "support": 26.0
+    },
+    "Bengal": {
+      "precision": 0.696969696969697,
+      "recall": 0.8518518518518519,
+      "f1-score": 0.7666666666666667,
+      "support": 27.0
+    },
+    "Birman": {
+      "precision": 0.7916666666666666,
+      "recall": 0.9047619047619048,
+      "f1-score": 0.8444444444444444,
+      "support": 21.0
+    },
+    "Bombay": {
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "f1-score": 0.9767441860465116,
+      "support": 21.0
+    },
+    "Boxer": {
+      "precision": 0.9230769230769231,
+      "recall": 0.96,
+      "f1-score": 0.9411764705882353,
+      "support": 25.0
+    },
+    "British_Shorthair": {
+      "precision": 0.8636363636363636,
+      "recall": 0.95,
+      "f1-score": 0.9047619047619048,
+      "support": 20.0
+    },
+    "Chihuahua": {
+      "precision": 0.9259259259259259,
+      "recall": 0.8928571428571429,
+      "f1-score": 0.9090909090909091,
+      "support": 28.0
+    },
+    "Egyptian_Mau": {
+      "precision": 0.95,
+      "recall": 0.7037037037037037,
+      "f1-score": 0.8085106382978723,
+      "support": 27.0
+    },
+    "English_Cocker_Spaniel": {
+      "precision": 0.9523809523809523,
+      "recall": 0.7692307692307693,
+      "f1-score": 0.851063829787234,
+      "support": 26.0
+    },
+    "English_Setter": {
+      "precision": 0.84375,
+      "recall": 0.9642857142857143,
+      "f1-score": 0.9,
+      "support": 28.0
+    },
+    "German_Shorthaired": {
+      "precision": 1.0,
+      "recall": 0.9642857142857143,
+      "f1-score": 0.9818181818181818,
+      "support": 28.0
+    },
+    "Great_Pyrenees": {
+      "precision": 0.84,
+      "recall": 1.0,
+      "f1-score": 0.9130434782608695,
+      "support": 21.0
+    },
+    "Havanese": {
+      "precision": 0.8666666666666667,
+      "recall": 0.896551724137931,
+      "f1-score": 0.8813559322033898,
+      "support": 29.0
+    },
+    "Japanese_Chin": {
+      "precision": 0.9655172413793104,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9491525423728814,
+      "support": 30.0
+    },
+    "Keeshond": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1-score": 0.9473684210526315,
+      "support": 30.0
+    },
+    "Leonberger": {
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1-score": 0.8333333333333334,
+      "support": 20.0
+    },
+    "Main_Coon": {
+      "precision": 0.9130434782608695,
+      "recall": 0.9130434782608695,
+      "f1-score": 0.9130434782608695,
+      "support": 23.0
+    },
+    "Miniature_Pinscher": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1-score": 0.9,
+      "support": 20.0
+    },
+    "Newfoundland": {
+      "precision": 1.0,
+      "recall": 0.8275862068965517,
+      "f1-score": 0.9056603773584906,
+      "support": 29.0
+    },
+    "Persian": {
+      "precision": 0.9310344827586207,
+      "recall": 0.9310344827586207,
+      "f1-score": 0.9310344827586207,
+      "support": 29.0
+    },
+    "Pomeranian": {
+      "precision": 0.9354838709677419,
+      "recall": 1.0,
+      "f1-score": 0.9666666666666667,
+      "support": 29.0
+    },
+    "Pug": {
+      "precision": 1.0,
+      "recall": 0.9642857142857143,
+      "f1-score": 0.9818181818181818,
+      "support": 28.0
+    },
+    "Ragdoll": {
+      "precision": 0.8888888888888888,
+      "recall": 0.7272727272727273,
+      "f1-score": 0.8,
+      "support": 22.0
+    },
+    "Russian_Blue": {
+      "precision": 0.9655172413793104,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9491525423728814,
+      "support": 30.0
+    },
+    "Saint_Bernard": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 26.0
+    },
+    "Samoyed": {
+      "precision": 1.0,
+      "recall": 0.8846153846153846,
+      "f1-score": 0.9387755102040817,
+      "support": 26.0
+    },
+    "Scottish_Terrier": {
+      "precision": 0.96,
+      "recall": 0.9230769230769231,
+      "f1-score": 0.9411764705882353,
+      "support": 26.0
+    },
+    "Shiba_Inu": {
+      "precision": 1.0,
+      "recall": 0.9629629629629629,
+      "f1-score": 0.9811320754716981,
+      "support": 27.0
+    },
+    "Siamese": {
+      "precision": 0.9583333333333334,
+      "recall": 0.9583333333333334,
+      "f1-score": 0.9583333333333334,
+      "support": 24.0
+    },
+    "Sphynx": {
+      "precision": 0.9565217391304348,
+      "recall": 1.0,
+      "f1-score": 0.9777777777777777,
+      "support": 22.0
+    },
+    "Staffordshire_Bull_Terrier": {
+      "precision": 0.7272727272727273,
+      "recall": 0.7272727272727273,
+      "f1-score": 0.7272727272727273,
+      "support": 22.0
+    },
+    "Wheaten_Terrier": {
+      "precision": 1.0,
+      "recall": 0.96,
+      "f1-score": 0.9795918367346939,
+      "support": 25.0
+    },
+    "Yorkshire_Terrier": {
+      "precision": 0.9333333333333333,
+      "recall": 0.9655172413793104,
+      "f1-score": 0.9491525423728814,
+      "support": 29.0
+    },
+    "accuracy": 0.9042105263157895,
+    "macro avg": {
+      "precision": 0.9069714872620273,
+      "recall": 0.9058618562591574,
+      "f1-score": 0.9028235858833953,
+      "support": 950.0
+    },
+    "weighted avg": {
+      "precision": 0.9107790205793967,
+      "recall": 0.9042105263157895,
+      "f1-score": 0.9039956018525283,
+      "support": 950.0
+    }
+  },
+  "val_acc_from_checkpoint": 91.23931623931624
+}

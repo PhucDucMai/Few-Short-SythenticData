@@ -20,3 +20,4 @@ opencv-python
 
 peft
 open-clip-torch
+streamlit>=1.35

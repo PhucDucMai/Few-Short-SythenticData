@@ -1,0 +1,60 @@
+2026-05-31 19:52:43 [INFO] Device : cuda
+2026-05-31 19:52:43 [INFO] Args   : {'data_root': './Datasets', 'output_dir': './trained_CLIP_V4', 'clip_model': 'ViT-B-16', 'clip_pretrain': 'openai', 'lora_rank': 4, 'lora_alpha': 8, 'lora_dropout': 0.1, 'lora_targets': 'out_proj,c_fc,c_proj', 'n_clusters': 74, 'kmeans_iter': 300, 'lam': 4.0, 'lam1': 0.1, 'lam2': 1.0, 'epochs': 100, 'batch_size': 64, 'lr': 0.0001, 'weight_decay': 0.001, 'num_workers': 4, 'seed': 0, 'log_interval': 20}
+2026-05-31 19:52:43 [INFO] Classes: 37  |  Real: 592  |  Fake: 4958
+2026-05-31 19:52:45 [INFO] Model ready — 461,349 trainable / 86,653,989 total params (0.53%)
+2026-05-31 19:52:45 [INFO] Clusters: 74
+2026-05-31 19:52:45 [INFO] Phase 1 — feature extraction for K-Means
+2026-05-31 19:54:28 [INFO] Running K-Means  k=74  n=5550 ...
+2026-05-31 19:54:46 [INFO] K-Means done in 17.6s
+2026-05-31 19:54:46 [INFO] g_total (total synthetic images): 4958
+2026-05-31 19:54:46 [INFO] Phase 2 — training
+2026-05-31 19:58:57 [INFO] Epoch   1/100 | loss=17.7985 | ce_real=3.5605 | ce_fake=3.5567 | disc=0.00001 | rob=0.00000 | val_acc=11.54%
+2026-05-31 19:58:57 [INFO]   ✓ Best val acc 11.54% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:03:06 [INFO] Epoch   2/100 | loss=15.5990 | ce_real=3.1287 | ce_fake=3.0843 | disc=0.00001 | rob=0.00000 | val_acc=44.87%
+2026-05-31 20:03:06 [INFO]   ✓ Best val acc 44.87% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:07:24 [INFO] Epoch   3/100 | loss=13.0199 | ce_real=2.6227 | ce_fake=2.5293 | disc=0.00003 | rob=0.00001 | val_acc=62.71%
+2026-05-31 20:07:24 [INFO]   ✓ Best val acc 62.71% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:11:33 [INFO] Epoch   4/100 | loss=10.9250 | ce_real=2.2044 | ce_fake=2.1074 | disc=0.00004 | rob=0.00001 | val_acc=76.50%
+2026-05-31 20:11:34 [INFO]   ✓ Best val acc 76.50% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:15:44 [INFO] Epoch   5/100 | loss=9.5110 | ce_real=1.9249 | ce_fake=1.8112 | disc=0.00004 | rob=0.00001 | val_acc=81.30%
+2026-05-31 20:15:44 [INFO]   ✓ Best val acc 81.30% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:19:50 [INFO] Epoch   6/100 | loss=8.0290 | ce_real=1.6209 | ce_fake=1.5453 | disc=0.00005 | rob=0.00001 | val_acc=83.97%
+2026-05-31 20:19:51 [INFO]   ✓ Best val acc 83.97% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:23:49 [INFO] Epoch   7/100 | loss=7.2441 | ce_real=1.4700 | ce_fake=1.3641 | disc=0.00007 | rob=0.00002 | val_acc=84.51%
+2026-05-31 20:23:50 [INFO]   ✓ Best val acc 84.51% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:27:45 [INFO] Epoch   8/100 | loss=6.1798 | ce_real=1.2458 | ce_fake=1.1965 | disc=0.00007 | rob=0.00002 | val_acc=83.01%
+2026-05-31 20:31:42 [INFO] Epoch   9/100 | loss=5.6985 | ce_real=1.1529 | ce_fake=1.0869 | disc=0.00009 | rob=0.00002 | val_acc=88.03%
+2026-05-31 20:31:42 [INFO]   ✓ Best val acc 88.03% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:35:38 [INFO] Epoch  10/100 | loss=5.2526 | ce_real=1.0698 | ce_fake=0.9735 | disc=0.00010 | rob=0.00003 | val_acc=86.97%
+2026-05-31 20:39:36 [INFO] Epoch  11/100 | loss=4.7842 | ce_real=0.9692 | ce_fake=0.9073 | disc=0.00012 | rob=0.00004 | val_acc=89.10%
+2026-05-31 20:39:36 [INFO]   ✓ Best val acc 89.10% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 20:43:37 [INFO] Epoch  12/100 | loss=4.2708 | ce_real=0.8648 | ce_fake=0.8114 | disc=0.00010 | rob=0.00003 | val_acc=87.39%
+2026-05-31 20:47:35 [INFO] Epoch  13/100 | loss=4.1478 | ce_real=0.8443 | ce_fake=0.7705 | disc=0.00012 | rob=0.00004 | val_acc=87.07%
+2026-05-31 20:51:34 [INFO] Epoch  14/100 | loss=3.8947 | ce_real=0.7895 | ce_fake=0.7369 | disc=0.00012 | rob=0.00003 | val_acc=89.00%
+2026-05-31 20:55:32 [INFO] Epoch  15/100 | loss=3.4876 | ce_real=0.7035 | ce_fake=0.6738 | disc=0.00012 | rob=0.00004 | val_acc=87.82%
+2026-05-31 20:59:30 [INFO] Epoch  16/100 | loss=3.3491 | ce_real=0.6703 | ce_fake=0.6680 | disc=0.00014 | rob=0.00005 | val_acc=89.10%
+2026-05-31 21:03:31 [INFO] Epoch  17/100 | loss=3.3721 | ce_real=0.6825 | ce_fake=0.6421 | disc=0.00014 | rob=0.00004 | val_acc=88.68%
+2026-05-31 21:07:27 [INFO] Epoch  18/100 | loss=3.3282 | ce_real=0.6796 | ce_fake=0.6097 | disc=0.00015 | rob=0.00004 | val_acc=90.60%
+2026-05-31 21:07:27 [INFO]   ✓ Best val acc 90.60% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 21:11:30 [INFO] Epoch  19/100 | loss=3.0147 | ce_real=0.6114 | ce_fake=0.5690 | disc=0.00011 | rob=0.00004 | val_acc=89.64%
+2026-05-31 21:15:45 [INFO] Epoch  20/100 | loss=3.0967 | ce_real=0.6332 | ce_fake=0.5638 | disc=0.00014 | rob=0.00003 | val_acc=89.74%
+2026-05-31 21:20:00 [INFO] Epoch  21/100 | loss=2.7890 | ce_real=0.5608 | ce_fake=0.5457 | disc=0.00013 | rob=0.00003 | val_acc=89.00%
+2026-05-31 21:24:14 [INFO] Epoch  22/100 | loss=2.8056 | ce_real=0.5648 | ce_fake=0.5465 | disc=0.00016 | rob=0.00004 | val_acc=90.28%
+2026-05-31 21:28:28 [INFO] Epoch  23/100 | loss=2.7232 | ce_real=0.5521 | ce_fake=0.5147 | disc=0.00013 | rob=0.00003 | val_acc=89.74%
+2026-05-31 21:32:42 [INFO] Epoch  24/100 | loss=2.6661 | ce_real=0.5380 | ce_fake=0.5139 | disc=0.00014 | rob=0.00004 | val_acc=88.78%
+2026-05-31 21:36:57 [INFO] Epoch  25/100 | loss=2.4029 | ce_real=0.4794 | ce_fake=0.4853 | disc=0.00013 | rob=0.00003 | val_acc=90.06%
+2026-05-31 21:41:10 [INFO] Epoch  26/100 | loss=2.2036 | ce_real=0.4336 | ce_fake=0.4690 | disc=0.00013 | rob=0.00003 | val_acc=89.00%
+2026-05-31 21:45:23 [INFO] Epoch  27/100 | loss=2.2471 | ce_real=0.4421 | ce_fake=0.4789 | disc=0.00015 | rob=0.00005 | val_acc=89.85%
+2026-05-31 21:49:23 [INFO] Epoch  28/100 | loss=2.1737 | ce_real=0.4302 | ce_fake=0.4528 | disc=0.00012 | rob=0.00004 | val_acc=90.71%
+2026-05-31 21:49:23 [INFO]   ✓ Best val acc 90.71% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 21:53:19 [INFO] Epoch  29/100 | loss=2.1125 | ce_real=0.4149 | ce_fake=0.4530 | disc=0.00014 | rob=0.00004 | val_acc=90.49%
+2026-05-31 21:58:03 [INFO] Epoch  30/100 | loss=2.1820 | ce_real=0.4364 | ce_fake=0.4364 | disc=0.00014 | rob=0.00004 | val_acc=90.49%
+2026-05-31 22:02:34 [INFO] Epoch  31/100 | loss=2.4488 | ce_real=0.5032 | ce_fake=0.4361 | disc=0.00018 | rob=0.00006 | val_acc=88.35%
+2026-05-31 22:07:03 [INFO] Epoch  32/100 | loss=2.1131 | ce_real=0.4159 | ce_fake=0.4496 | disc=0.00012 | rob=0.00004 | val_acc=89.42%
+2026-05-31 22:11:30 [INFO] Epoch  33/100 | loss=2.0692 | ce_real=0.4118 | ce_fake=0.4219 | disc=0.00014 | rob=0.00004 | val_acc=90.28%
+2026-05-31 22:15:58 [INFO] Epoch  34/100 | loss=2.1754 | ce_real=0.4341 | ce_fake=0.4389 | disc=0.00015 | rob=0.00005 | val_acc=89.74%
+2026-05-31 22:20:25 [INFO] Epoch  35/100 | loss=1.9642 | ce_real=0.3835 | ce_fake=0.4303 | disc=0.00016 | rob=0.00005 | val_acc=90.49%
+2026-05-31 22:24:52 [INFO] Epoch  36/100 | loss=1.8819 | ce_real=0.3726 | ce_fake=0.3915 | disc=0.00015 | rob=0.00004 | val_acc=91.24%
+2026-05-31 22:24:53 [INFO]   ✓ Best val acc 91.24% — saved to ./trained_CLIP_V4\best_model.pth
+2026-05-31 22:29:25 [INFO] Epoch  37/100 | loss=1.8232 | ce_real=0.3536 | ce_fake=0.4086 | disc=0.00014 | rob=0.00004 | val_acc=90.71%
+2026-05-31 22:34:15 [INFO] Epoch  38/100 | loss=1.7522 | ce_real=0.3397 | ce_fake=0.3934 | disc=0.00014 | rob=0.00004 | val_acc=88.68%
