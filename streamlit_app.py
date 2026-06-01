@@ -13,6 +13,7 @@ import torch.nn.functional as F
 from PIL import Image, ImageOps
 from peft import LoraConfig, get_peft_model
 from torchvision import transforms
+from streamlit.runtime.scriptrunner import get_script_run_ctx
 
 
 ROOT = Path(__file__).resolve().parent
@@ -22,46 +23,46 @@ DATASET_INFO_PATH = ROOT / "Visualization-Image" / "dataset_info.json"
 CLIP_MEAN = (0.48145466, 0.4578275, 0.40821073)
 CLIP_STD = (0.26862954, 0.26130258, 0.27577711)
 MODEL_INPUT_SIZE = 224
-DISPLAY_SIZE = (512, 512)
+DISPLAY_SIZE = (224, 224)
 
 DEFAULT_CLASS_NAMES = [
     "Abyssinian",
-    "american_bulldog",
-    "american_pit_bull_terrier",
-    "basset_hound",
-    "beagle",
+    "American_Bulldog",
+    "American_Pit_Bull_Terrier",
+    "Basset_Hound",
+    "Beagle",
     "Bengal",
     "Birman",
     "Bombay",
-    "boxer",
+    "Boxer",
     "British_Shorthair",
-    "chihuahua",
+    "Chihuahua",
     "Egyptian_Mau",
-    "english_cocker_spaniel",
-    "english_setter",
-    "german_shorthaired",
-    "great_pyrenean_mountain",
-    "havanese",
-    "japanese_chin",
-    "keeshond",
-    "leonberger",
-    "Maine_Coon",
-    "miniature_pinscher",
-    "newfoundland",
+    "English_Cocker_Spaniel",
+    "English_Setter",
+    "German_Shorthaired",
+    "Great_Pyrenees",
+    "Havanese",
+    "Japanese_Chin",
+    "Keeshond",
+    "Leonberger",
+    "Main_Coon",
+    "Miniature_Pinscher",
+    "Newfoundland",
     "Persian",
-    "pomeranian",
-    "pug",
+    "Pomeranian",
+    "Pug",
     "Ragdoll",
     "Russian_Blue",
-    "saint_bernard",
-    "samoyed",
-    "scottish_terrier",
-    "shiba_inu",
+    "Saint_Bernard",
+    "Samoyed",
+    "Scottish_Terrier",
+    "Shiba_Inu",
     "Siamese",
     "Sphynx",
-    "staffordshire_bull_terrier",
-    "wheaten_terrier",
-    "yorkshire_terrier",
+    "Staffordshire_Bull_Terrier",
+    "Wheaten_Terrier",
+    "Yorkshire_Terrier",
 ]
 
 
@@ -177,6 +178,10 @@ def predict(image: Image.Image, device_preference: str):
 
 
 def main() -> None:
+    if get_script_run_ctx() is None:
+        print("This app must be launched with: streamlit run streamlit_app.py")
+        return
+
     st.set_page_config(
         page_title="Pet Class Demo",
         page_icon="🐾",

@@ -361,3 +361,15 @@ Intuition:
 * Samples describing the same local concept should produce similar predictions.
 * Reduces variance caused by synthetic noise.
 * Improves generalization to unseen real images.
+
+---
+
+# Streamlit Demo
+
+Run the demo UI with:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+If you execute `python streamlit_app.py` directly, the script will now print this instruction and exit without emitting Streamlit bare-mode warnings.
